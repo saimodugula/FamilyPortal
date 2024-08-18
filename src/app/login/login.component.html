@@ -1,0 +1,10 @@
+<H1>Welcome to Login Page</H1>
+<small *ngIf="invalidLogin">{{errorMsg}}</small>
+<div>
+User Name : <input type="text" name="username" [(ngModel)]="username">
+Password  : <input type="password" name="password" [(ngModel)]="password">
+
+<!-- User Name : {{username}} -->
+
+<button (click)=login() class="btn btn-success" >Login</button>
+</div>
